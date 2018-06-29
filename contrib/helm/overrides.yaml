@@ -1,0 +1,16 @@
+image:
+  repository: corvana/clair
+  tag: v2.0.3-with-pr-562
+  pullPolicy: Always
+
+resources:
+  limits:
+    cpu: 2000m
+    memory: 1500Mi
+  requests:
+    cpu: 100m
+    memory: 1500Mi
+
+postgresql:
+  persistence:
+    size: 30Gi
