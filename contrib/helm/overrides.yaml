@@ -1,0 +1,20 @@
+image:
+  repository: quay.io/coreos/clair
+  tag: v2.0.4
+  pullPolicy: Always
+
+resources:
+  limits:
+    cpu: 2000m
+    memory: 1500Mi
+  requests:
+    cpu: 100m
+    memory: 1500Mi
+
+config:
+  notificationWebhookEndpoint: ''
+
+postgresql:
+  imageTag: 9.6.9
+  persistence:
+    size: 30Gi
