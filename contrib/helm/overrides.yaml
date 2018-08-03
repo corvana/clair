@@ -15,6 +15,6 @@ config:
   notificationWebhookEndpoint: ''
 
 postgresql:
-  imageTag: 9.6.9
+  imageTag: 9.6.9-alpine
   persistence:
     size: 30Gi
